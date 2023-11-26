@@ -1,5 +1,7 @@
 :root{
-  --bs-secondary-bg:#e5e5e5
+  --bs-secondary-bg: #e5e5e5;
+  --bs-tertiary-bg: #051e34;
+  --bs-light-soft-shadow: #f8f9fa8c;
 }
 
 /* root color */
@@ -7,14 +9,17 @@
 .bg-secondary-color{
     background-color: var(--bs-secondary-bg);
 }
+.bg-tertiary-bg{
+    background-color: var(--bs-tertiary-bg);
+}
 
 
-
+/* background color change */
 
 
 
 .my-nav-bar-header  {
-    /* height: 50px; */
+    height: 64px;
     width: 100%;
 }
 
@@ -32,4 +37,45 @@
 
 .star-color{
     color:#ff8f00 ;
+}
+
+/* inizio aside  */
+.main-principale {
+    height: calc(100vh - 64px);
+}
+
+#sidebar {
+    height: 100%;
+    width: 60px;
+    background-image: url("../img/sidebar-bg.png");
+}
+
+#sidebar a {
+    display: inline-block;
+    min-width: 60%;
+    text-align: center;
+    
+}
+
+#sidebar a:hover {
+    background-color: var(--bs-light-soft-shadow);
+}
+
+
+
+
+
+/* media responsive */
+
+
+/* device large */
+@media screen and (min-width: 992px) {
+    
+    #sidebar {
+        width: 150px;
+    }
+    
+    
+
+
 }
