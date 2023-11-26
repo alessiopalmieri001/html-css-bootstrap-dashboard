@@ -1,0 +1,13 @@
+.my-nav-bar  {
+    height: 4rem;
+    width: 100%;
+}
+
+.my-nav-bar .row {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.my-nav-bar ul {
+    height: 100%;
+}
