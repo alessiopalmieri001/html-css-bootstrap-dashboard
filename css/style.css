@@ -1,13 +1,35 @@
-.my-nav-bar  {
-    height: 4rem;
+:root{
+  --bs-secondary-bg:#e5e5e5
+}
+
+/* root color */
+
+.bg-secondary-color{
+    background-color: var(--bs-secondary-bg);
+}
+
+
+
+
+
+
+.my-nav-bar-header  {
+    /* height: 50px; */
     width: 100%;
 }
 
-.my-nav-bar .row {
+.my-nav-bar-header .row {
     flex-wrap: nowrap;
     width: 100%;
 }
 
-.my-nav-bar ul {
+.my-nav-bar-header ul {
     height: 100%;
+}
+.my-nav-bar-header .dropdown-toggle::after {
+    display: none;
+}
+
+.star-color{
+    color:#ff8f00 ;
 }
