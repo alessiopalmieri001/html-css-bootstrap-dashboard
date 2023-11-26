@@ -1,11 +1,14 @@
+/* root color */
+
 :root{
+  --bs-primary-bg: #1b72e8;
   --bs-secondary-bg: #e5e5e5;
   --bs-tertiary-bg: #051e34;
   --bs-light-soft-shadow: #f8f9fa8c;
 }
 
-/* root color */
 
+/* background color change */
 .bg-secondary-color{
     background-color: var(--bs-secondary-bg);
 }
@@ -13,10 +16,20 @@
     background-color: var(--bs-tertiary-bg);
 }
 
+.bg-primary-bg {
+    background-color: var(--bs-primary-bg);
+}   
 
-/* background color change */
+/* general */
 
 
+.font-xs{
+    font-size: 0.8rem;
+}
+
+
+
+/* nav-bar */
 
 .my-nav-bar-header  {
     height: 64px;
@@ -38,6 +51,7 @@
 .star-color{
     color:#ff8f00 ;
 }
+
 
 /* inizio aside  */
 .main-principale {
@@ -61,7 +75,7 @@
     background-color: var(--bs-light-soft-shadow);
 }
 
-
+/* parte princiale */
 
 
 
@@ -75,7 +89,9 @@
         width: 150px;
     }
     
-    
+    .my-main-container {
+        width: calc(100vw - 150px);
+    }
 
 
 }

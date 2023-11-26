@@ -16,7 +16,6 @@
     <body>
         <main>
             <section class="my-nav-bar-header">
-                
                 <nav class="navbar my-1 d-flex align-items-center">
                     <div class="container-fluid ">
                         <div class="row">
@@ -72,13 +71,10 @@
                             <!-- fine col-2 -->
                         </div>
                         <!-- fine row -->
-                        
                     </div>
-                    
                 </nav>
-                
-                
             </section>
+            <!-- parte principale sinistra del main -->
             <section class="d-flex main-principale">
                 <aside class="bg-tertiary-bg d-flex flex-column justify-content-between" id="sidebar">
                     <!-- inizio top -->
@@ -106,10 +102,61 @@
                     </div>
                     <!-- fine bottom -->
                 </aside>
+                <!-- parte principale destra del main -->
+                <div class="my-main-container">
+                    <section class="container-fluid bg-primary-bg" id="overview">
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col text-light px-3 py-2 py-md-3 order-md-2 d-flex justify-content-md-end align-items-start">
+                                <div class="add_student">
+                                    <label class="pe-3 align-middle" for="offcanvasRightBtn">Nuovo Studente</label>
+                                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" id="offcanvasRightBtn">
+                                        +
+                                    </button>
+                                </div>
+                                <!-- fine bottone per aggiungere i studenti -->
+                            </div>
+                            <div class="col text-light ps-1 px-3 py-2 py-md-3 order-md-0">
+                                <h2 class="fw-light">
+                                    Boolean
+                                    <span class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-dark bg-opacity-25">
+                                        Piano blaze
+                                    </span>
+                                </h2>
+                                <span>
+                                    <span class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-dark bg-opacity-25">
+                                        3 App
+                                    </span>
+                                    <i class="fa fa-angle-double-right ms-2 font-xs align-middle" aria-hidden="true"></i>
+                                    <span
+                                        class="badge ms-2 align-middle rounded-pill fw-light text- bg-dark bg-opacity-25 d-none d-xxl-inline-flex">
+                                        Boolean mobile app
+                                    </span>
+                                    <span
+                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-dark bg-opacity-25 d-none d-xxl-inline-flex">
+                                        Boolean web app
+                                    </span>
+                                    <span
+                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-dark bg-opacity-25 d-none d-xxl-inline-flex">
+                                        Boolean blog app
+                                    </span>
+                                    <span
+                                        class="badge ms-2 align-middle rounded-circle fw-light font-xs bg-dark bg-opacity-25 d-inline-flex d-xxl-none">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col text-light px-3 py-2 py-md-3 order-md-1 d-flex justify-content-md-center">
+                                <p>
+                                    Studenti online negli ultimi 30 minuti
+                                    <br>
+                                    <span class="fs-3">125</span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>
