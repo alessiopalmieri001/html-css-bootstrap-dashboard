@@ -3,7 +3,7 @@
 :root{
     --bs-primary-bg: #1b72e8;
     --bs-secondary-bg: #e5e5e5;
-    --bs-tertiary-bg: #051e34;
+    --bs-aside-bg:#051e34;
     --bs-light-soft-shadow: #f8f9fa8c;
     --bs-dark-bg: #5b5858;
     --bs-light-bg: #f8f9fa;
@@ -14,8 +14,8 @@
 .bg-secondary-color{
     background-color: var(--bs-secondary-bg);
 }
-.bg-tertiary-bg{
-    background-color: var(--bs-tertiary-bg);
+.bg-aside-bg{
+    background-color: var(--bs-aside-bg);
 }
 
 .bg-primary-bg {
@@ -113,6 +113,16 @@
     color: var(--bs-light-bg);
 }
 
+
+
+/* offcanvas */
+.new-student #offcanvasRight {
+    width: 100%;
+}
+.new-student .input-group-text,
+.new-student #foto-studente{
+    background-color: #f8f9fa;
+} 
 /* media responsive */
 
 
@@ -125,6 +135,10 @@
     
     .my-main-container {
         width: calc(100vw - 150px);
+    }
+
+    .new-student #offcanvasRight {
+        width: 500px;
     }
 
 

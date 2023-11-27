@@ -76,7 +76,7 @@
             </section>
             <!-- parte principale sinistra del main -->
             <section class="d-flex main-principale">
-                <aside class="bg-tertiary-bg d-flex flex-column justify-content-between" id="sidebar">
+                <aside class="bg-aside-bg d-flex flex-column justify-content-between" id="sidebar">
                     <!-- inizio top -->
                     <div class=" d-flex flex-column justify-content-start align-items-center py-3 gap-2">
                         <a class="text-light text-decoration-none p-2" href="#">
@@ -359,7 +359,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- /.col -->
+                                        <!-- inizio f.a.q -->
                                         <div class="col">
                                             <div class="card text-start">
                                                 <h4 class="card-header">F.A.Q</h4>
@@ -367,11 +367,11 @@
                                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="flush-headingOne">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false aria-controls="flush-collapseOne">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" >
                                                                     Come aggiungere un nuovo studente?
                                                                 </button>
                                                             </h2>
-                                                            <div id="flush-collapseOne" class="accordion-collapse collapse"aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                                 <div class="accordion-body">
                                                                     Clicca sul + in alto nella sezione blu.
                                                                 </div>
@@ -379,13 +379,11 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="flush-headingTwo">
-                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" >
                                                                     Come posso accedere alle informazione del mio account?
                                                                 </button>
                                                             </h2>
-                                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                                                aria-labelledby="flush-headingTwo"
-                                                                data-bs-parent="#accordionFlushExample">
+                                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                                 <div class="accordion-body">
                                                                     Clicca sull'icona della campanella.
                                                                 </div>
@@ -393,18 +391,15 @@
                                                         </div>
                                                         <div class="accordion-item">
                                                             <h2 class="accordion-header" id="flush-headingThree">
-                                                                <button class="accordion-button collapsed" type="button"
-                                                                    data-bs-toggle="collapse"
-                                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                                                    aria-controls="flush-collapseThree">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
                                                                     Posso usare questa dashboard da mobile?
                                                                 </button>
                                                             </h2>
-                                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                                                aria-labelledby="flush-headingThree"
-                                                                data-bs-parent="#accordionFlushExample">
+                                                            <div id="flush-collapseThree" class="accordion-collapse collapse"data-bs-parent="#accordionFlushExample">
                                                                 <div class="accordion-body">
-                                                                    Si puoi farlo! 
+                                                                    Siiii!
+                                                                    <br> 
+                                                                    Provalo ora sul tuo dispositivo mobile.
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -412,6 +407,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- fine f.a.q -->
                                     </div>
                                 </div>
                                 <!-- checkbox  -->
@@ -457,7 +453,7 @@
                                             <!-- diagramma con utenza attiva -->
                                             <div class="col-12">
                                                 <div class="card text-start">
-                                                    <img class="card-img-top" src="img/stats.jpeg" alt="Title">
+                                                    <img class="card-img-top" src="img/stats.jpeg" alt="statistiche">
                                                     <h4 class="card-title ps-3">Utenti attivi</h4>
                                                     <p class="card-text ps-3">Lista degli utenti attivi in piattaforma nell'ultimo mese
                                                     </p>
@@ -486,6 +482,91 @@
                     </section>
                     <!-- fine info classi -->
                 </div>
+                <!-- fine my-main-container -->
+            </section>
+            <!-- offcanvas -->
+            <section>
+                <div class="new-student">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title fs-6" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <!-- /.offcanvas-header -->
+                        <div class="offcanvas-body">
+                            <div class="container-fluid">
+                                <form class="row g-3" action="#">
+                                    <div class="col-12 col-md-6">
+                                        <label for="new-student-name" class="form-label">Nome</label>
+                                        <input type="text" name="name" id="new-student-name" class="form-control" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="new-student-surname" class="form-label">Cognome</label>
+                                        <input type="text" name="surname" id="new-student-surname" class="form-control" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="new-student-mail" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="email" name="mail" id="new-student-mail" class="form-control" required>
+                                        </div>
+                                        <!-- /.input-group -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="new-student-password" class="form-label">Password</label>
+                                        <input type="password" name="password" id="new-student-password" class="form-control" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="new_student_address" class="form-label">Indirizzo</label>
+                                        <input type="text" name="address" id="new-student-address" class="form-control" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="new_student_city" class="form-label">Città</label>
+                                        <input type="text" name="city" id="new-student-city" class="form-control" required>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="new-student-state" class="form-label">regione</label>
+                                        <!-- inizio form-select -->
+                                        <select class="form-select" aria-label="Default select example" id="new-student-state" required>
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Trentino</option>
+                                            <option value="2">Toscana</option>
+                                            <option value="3">Lazio</option>
+                                            <option value="4">Campania</option>
+                                            <option value="5">Lombardia</option>
+                                            <option value="4">Abruzzo</option>
+                                            <option value="5">Sicilia</option>
+                                        </select>
+                                        <!-- /fine form-select -->
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <label for="new-student-cap" class="form-label">CAP</label>
+                                        <input type="number" name="cap" id="new-student-cap" class="form-control" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="new_student_picture" class="form-label">Foto</label>
+                                        <input type="file" name="picture" id="foto-studente" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" name="confirm" id="new-student-confirm" class="form-check-input"
+                                                required>
+                                            <label for="new-student-confirm" class="form-check-label">Seleziona per proseguire</label>
+                                        </div>
+                                        <!-- /.form-check -->
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </form>
+                                <!--  fine form di inserimento dati dello studente -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fine off-canavas -->
+                </div>
+                <!
             </section>
         </main>
     </body>
