@@ -1,10 +1,12 @@
 /* root color */
 
 :root{
-  --bs-primary-bg: #1b72e8;
-  --bs-secondary-bg: #e5e5e5;
-  --bs-tertiary-bg: #051e34;
-  --bs-light-soft-shadow: #f8f9fa8c;
+    --bs-primary-bg: #1b72e8;
+    --bs-secondary-bg: #e5e5e5;
+    --bs-tertiary-bg: #051e34;
+    --bs-light-soft-shadow: #f8f9fa8c;
+    --bs-dark-bg: #5b5858;
+    --bs-light-bg: #f8f9fa;
 }
 
 
@@ -18,7 +20,14 @@
 
 .bg-primary-bg {
     background-color: var(--bs-primary-bg);
-}   
+}
+.bg-dark-bg {
+    background-color: var(--bs-dark-bg);
+}
+
+.bg-light-bg {
+    background-color: var(--bs-light-bg);
+}  
 
 /* general */
 
@@ -76,8 +85,33 @@
 }
 
 /* parte princiale */
+.my-main-container {
+    height: calc(100vh - 64px);
+    width: calc(100vw - 60px);
+    overflow: auto;
+}
 
 
+
+.info-next-class .icon {
+    display: inline-block;
+    background-image: url("../img/class-avatar.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 2rem;
+    aspect-ratio: 1 / 1;
+    vertical-align: middle;
+}
+
+.info-next-class td button {
+    border-color: var(--bs-dark-bg);
+    color: var(--bs-dark-bg);
+}
+
+.info-next-class td button:hover {
+    border-color: var(--bs-light-bg);
+    color: var(--bs-light-bg);
+}
 
 /* media responsive */
 
@@ -94,4 +128,11 @@
     }
 
 
+}
+/* device xl */
+
+@media screen and (min-width: 1200px) {
+    .info-next-class tbody tr td:first-of-type {
+        width: 60%;
+    }
 }

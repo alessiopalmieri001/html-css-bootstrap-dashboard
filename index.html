@@ -16,9 +16,9 @@
     <body>
         <main>
             <section class="my-nav-bar-header">
-                <nav class="navbar my-1 d-flex align-items-center">
+                <nav class="navbar py-1 d-flex align-items-center">
                     <div class="container-fluid ">
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-2 me-4 px-0 d-flex align-items-center">
                                 <img class="d-inline-flex d-lg-none" height="50" src="img/mobile-logo.png" alt="Boolean Logo">
                                 <img class="img-fluid d-none d-lg-inline-flex ms-2 my-2" height="30" src="img/logo.svg" alt="Boolean Logo">
@@ -105,7 +105,7 @@
                 <!-- parte principale destra del main -->
                 <div class="my-main-container">
                     <section class="container-fluid bg-primary-bg" id="overview">
-                        <div class="row row-cols-1 row-cols-md-3">
+                        <div class="row  row-cols-1 row-cols-md-3">
                             <div class="col text-light px-3 py-2 py-md-3 order-md-2 d-flex justify-content-md-end align-items-start">
                                 <div class="add_student">
                                     <label class="pe-3 align-middle" for="offcanvasRightBtn">Nuovo Studente</label>
@@ -155,6 +155,336 @@
                             </div>
                         </div>
                     </section>
+                    <!-- fine top main  -->
+                    <section class="info-next-class pt-3">
+                        <div class="container-fluid">
+                            <div class="row  px-1 px-md-2 g-3">
+                                <div class="col-12 col-lg-8">
+                                    <div class="row d-flex flex-column g-3">
+                                        <div class="col">
+                                            <div class="card">
+                                                <h4 class="card-header">
+                                                    Prossime classi
+                                                </h4>
+                                                <div class="table-responsive px-3  py-2">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Nome</th>
+                                                                <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
+                                                                <th class="d-none d-md-table-cell"scope="col">ROI</th>
+                                                                <th scope="col">Stato</th>
+                                                                <th scope="col">Azioni</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 75
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-success">
+                                                                        Done
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 76
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-success">
+                                                                        Done
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 77
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-warning">
+                                                                        Process
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 78
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-success">
+                                                                        Done
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 79
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-danger">
+                                                                        Failed
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 80
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-success">
+                                                                        Done
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 81
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-danger">
+                                                                        Failed
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">
+                                                                    <span class="icon me-1"></span>
+                                                                    Classe 82
+                                                                </td>
+                                                                <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                                                                <td class="d-none d-md-table-cell">20%</td>
+                                                                <td>
+                                                                    <span
+                                                                        class="badge ms-2 align-middle rounded-pill fw-light font-xs bg-success">
+                                                                        Done
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-outline-dark my-1 my-sm-0">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.col -->
+                                        <div class="col">
+                                            <div class="card text-start">
+                                                <h4 class="card-header">F.A.Q</h4>
+                                                <div class="card-body">
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"data-bs-target="#flush-collapseOne" aria-expanded="false aria-controls="flush-collapseOne">
+                                                                    Come aggiungere un nuovo studente?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapseOne" class="accordion-collapse collapse"aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Clicca sul + in alto nella sezione blu.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                                    Come posso accedere alle informazione del mio account?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-headingTwo"
+                                                                data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Clicca sull'icona della campanella.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                                    aria-controls="flush-collapseThree">
+                                                                    Posso usare questa dashboard da mobile?
+                                                                </button>
+                                                            </h2>
+                                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="flush-headingThree"
+                                                                data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body">
+                                                                    Si puoi farlo! 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- checkbox  -->
+                                <div class="col-12 col-lg-4">
+                                    <div class="container-fluid p-0">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <h4 class="card-header">Todo</h4>
+                                                    <div class="card-body">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="task1">
+                                                                    <label class="form-check-label" for="task1">
+                                                                        Kickoff nuove classi
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="task2">
+                                                                    <label class="form-check-label" for="task2">
+                                                                        Lezione su Boostrap 5 in classe #75
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value=""
+                                                                        id="task3">
+                                                                    <label class="form-check-label" for="task3">
+                                                                        Controllare username github studenti
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- diagramma con utenza attiva -->
+                                            <div class="col-12">
+                                                <div class="card text-start">
+                                                    <img class="card-img-top" src="img/stats.jpeg" alt="Title">
+                                                    <h4 class="card-title ps-3">Utenti attivi</h4>
+                                                    <p class="card-text ps-3">Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                    </p>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            Gennaio: 1200
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            Febbraio: 800
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            Marzo: 1500
+                                                        </li>
+                                                    </ul>
+                                                    <div class="card-footer">
+                                                        <a class="text_sm" href="#">Visualizza report approndito</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fine container fluid -->
+                    </section>
+                    <!-- fine info classi -->
                 </div>
             </section>
         </main>
